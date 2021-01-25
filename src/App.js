@@ -47,7 +47,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <GlobalStyle>
           <Header />
           <Switch>
             <Route exact path='/' component={HomePage} />
@@ -66,7 +65,8 @@ class App extends React.Component {
             />
           </Switch>
           <Footer />
-        </GlobalStyle>
+          
+          <GlobalStyle />
       </div>
     );
   }

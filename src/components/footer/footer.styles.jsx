@@ -21,6 +21,10 @@ export const FooterConatiner = styled.div`
 
         background-color: black;
     }
+
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+    }
 `
 export const LogoContainer = styled.div`
     width: 23%;
@@ -66,11 +70,21 @@ export const InfoContainer = styled.div`
     small {
 
     }
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        text-align: center
+    }
 `
 
 export const LinksContainer = styled.div`
 
-    width: 23%
+    width: 23%;
+
+    @media screen and (max-width: 800px) {
+        width: 100%;
+        text-align: center
+    }
 `
 
 export const FooterLink = styled.a`
@@ -80,5 +94,10 @@ export const FooterLink = styled.a`
     &:hover {
         color: grey;
         transition: all 0.2s ease-in;
+    }
+
+    @media screen and (max-width: 800px) {
+        display: inline-block;
+        margin: 20px 20px;
     }
 `
